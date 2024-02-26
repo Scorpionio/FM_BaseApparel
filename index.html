@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Apparel</title>
+    <link rel="stylesheet" href="css/scss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <img src="img/logo.svg" alt="">
+            <img class="main-photo_mobile" src="img/hero-mobile.jpg" alt="">
+            <div class="main-box">
+                <h1>
+                    WE'RE <br> 
+                    <span>COMING <br> SOON</span>
+                </h1>
+                <p class="main-text">
+                    Hello fellow shoppers! We're currently building out new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+                </p>
+                <div id="email-border">
+                    <input id="email" type="email" placeholder="Email Address">
+                    <img id="error-img" class="error-img" src="img/icon-error.svg" alt="">
+                    <button onclick="email()">
+                        <img src="img/icon-arrow.svg" alt="">
+                    </button>
+                </div>
+                <p id="error-text" class="error-text">Please provide a valid email</p>
+            </div>
+        </div>
+        <img class="main-photo" src="img/hero-desktop.jpg" alt="">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

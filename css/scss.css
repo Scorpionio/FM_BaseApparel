@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p, h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: hsl(0, 36%, 70%);
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.main {
+  background-image: url(../img/bg-pattern-desktop.svg);
+  height: 100vh;
+}
+.main .container > img {
+  padding-top: 50px;
+  margin-bottom: 150px;
+}
+.main .main-photo {
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main .main-photo_mobile {
+  display: none;
+}
+
+.main-box {
+  width: 450px;
+}
+.main-box h1 {
+  margin: 0 0 20px 0;
+  line-height: 64px;
+  letter-spacing: 25px;
+  font-size: 56px;
+}
+.main-box h1 br {
+  padding: 9px 0;
+}
+.main-box h1 span {
+  color: hsl(0, 6%, 24%);
+  font-weight: 700;
+}
+.main-box .main-text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+.main-box div {
+  width: 100%;
+  height: 55px;
+  position: relative;
+  border-radius: 35px;
+  border: 1px solid hsl(0, 36%, 70%);
+  margin-bottom: 7px;
+}
+.main-box div input {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  width: 75%;
+  padding: 0 0 0 35px;
+  height: 55px;
+  box-sizing: border-box;
+  position: relative;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  outline: 0;
+}
+.main-box div input::-moz-placeholder {
+  color: hsla(0, 36%, 70%, 0.5);
+  font-size: 14px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+.main-box div input::placeholder {
+  color: hsla(0, 36%, 70%, 0.5);
+  font-size: 14px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+.main-box div > img {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 15px;
+  right: 115px;
+}
+.main-box div button {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  height: 59px;
+  width: 100px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border-radius: 35px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.205);
+}
+.main-box div button:hover {
+  background: linear-gradient(135deg, hsl(0, 100%, 94%), rgb(255, 192, 192));
+}
+.main-box div button img {
+  margin: 0;
+  padding: 0;
+}
+
+.error-text {
+  color: hsl(0, 93%, 68%);
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 36px;
+  display: none;
+}
+
+.error-img {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+@media (max-width: 375px) {
+  .main {
+    background-image: none;
+  }
+  .main .main-photo {
+    display: none;
+  }
+  .main .container > img:first-child {
+    padding-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 35px;
+    width: 105px;
+  }
+  .main .container > img:nth-child(2) {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-bottom: 65px;
+  }
+  .main .container .main-box {
+    width: 100%;
+  }
+  .main .container .main-box h1 {
+    line-height: 38px;
+    letter-spacing: 15px;
+    font-size: 38px;
+    text-align: center;
+  }
+  .main .container .main-box .main-text {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto 40px auto;
+    font-size: 14px;
+  }
+  .main .container .main-box div {
+    width: 300px;
+    height: 45px;
+    margin: 0 auto 10px auto;
+  }
+  .main .container .main-box div input {
+    width: 300px;
+    height: 45px;
+    font-size: 14px;
+    padding-left: 20px;
+  }
+  .main .container .main-box div > img {
+    height: 20px;
+    width: 20px;
+    top: 12px;
+    right: 75px;
+  }
+  .main .container .main-box div button {
+    width: 70px;
+    height: 47px;
+  }
+  .main .container .main-box .error-text {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}/*# sourceMappingURL=scss.css.map */
