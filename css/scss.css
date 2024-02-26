@@ -134,6 +134,16 @@ p, h1 {
   width: 0;
 }
 
+@media (max-height: 650px) {
+  .main .container > img {
+    margin-bottom: 100px;
+  }
+}
+@media (max-height: 600px) {
+  .main .container > img {
+    margin-bottom: 50px;
+  }
+}
 @media (max-width: 375px) {
   .main {
     background-image: none;
